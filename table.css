@@ -1,0 +1,90 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    border: 3px solid rgba(90, 84, 84, 0.493);
+    border-radius: 5px;
+    padding: 10px;
+}
+h1{
+    text-align: center;
+    font-family: cursive;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.table{
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+    padding-top: 5px;
+    padding-lest: 0;
+}
+.title{
+    width: 35%;
+}
+.author, .category,  .status, .rate{
+    width: 16.25%;
+}
+.header{
+    background-color: linear-gradient(to top, #243dac27, #12539c), rgb(31, 126, 163);
+}
+tr{
+    height: 40px;
+}
+tr[class="read"]{
+    background-image: linear-gradient(to top, rgb(151,255,151), rgb(205,255,205));
+}
+tr[class="to-read"]{
+    background-image: linear-gradient(to top, rgb(212,227,212), rgb(241,246,241));
+}
+tr[class="in-progress"]{
+    background-image: linear-gradient(to top, rgb(255,221,153), rgb(255,238,203));
+}
+span{
+    display: inline-block;
+}
+tr[class="to-read"] span[class="status"]{
+    border: 1px solid rgb(230,19,0);
+    background-image: linear-gradient(to top, rgb(255,23,2), rgb(255,126,114));
+    margin: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+tr[class="read"] span[class="status"] {
+    border: 1px solid rgb(29,201,29);
+    background-image: linear-gradient(to top, rgb(37,224,37), rgb(138,232,138));
+    margin: 5px;
+    border-radius: 10px;
+    text-align: center;
+    }
+    tr[class="to-read"] span[class="status"] :hover{
+        background-color: lightsalmon;
+    }
+    tr[class="in-progress"] span[class="status"] {
+    border: 1px solid rgb(194,133,10);
+    background-image: linear-gradient(to top, rgb(242,166,14), rgb(248,207,124));
+    margin: 5px;
+    border-radius: 10px;
+    text-align: center;    
+    }
+    span[class="status"], span[class^="rate"] {
+    height: 80%;
+    width: 80%;
+    padding: 5px;
+    }
+    span[class^="rate"] > span {
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin: 2px;
+    height: 10px;
+    width: 20%;
+    background-color: whitesmoke;
+    }
+    span[class*="one"] > :nth-child(1) {
+    background-image: linear-gradient(to top, rgb(255,214,7), rgb(255,227,90));
+    } 
+    span[class*="two"] > :nth-child(-n+2){
+      background-image: linear-gradient(to top, rgb(255,214,7), rgb(255,227,90));
+    } 
+    span[class*="three"] > :nth-child(-n+3){  
+      background-image: linear-gradient(to top, rgb(255,214,7), rgb(255,227,90));  
+    }  
